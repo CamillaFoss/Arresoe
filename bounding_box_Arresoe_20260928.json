@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arresø Bounding Box",
+        "projection": "WGS 84 / EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [12.035, 55.935],
+            [12.185, 55.935],
+            [12.185, 56.035],
+            [12.035, 56.035],
+            [12.035, 55.935]
+          ]
+        ]
+      }
+    }
+  ]
+}
