@@ -4,12 +4,14 @@ Min legeplads til at bringe min sø-modelleringsviden up-to-date
 
 Googles bud på en bounding_box er ikke god nok 
 - Brug datafordeleren til at hente sø-geometri
--- DS_Stednavn 
---- Søg på skrivemaade og gem navngivetSted_objectid
--- DS_Soe 
---- Søg på objectid og hent geometri ETRS89 / UTM zone 32N (EPSG:25832)
--- GEODKV_Soe
---- Geometri i 3D https://geodanmark.nu/Spec6/HTML5/DK/StartHer.htm
+--1 DS_Stednavn 
+---1.1 Søg på skrivemaade 
+---1.2 gem navngivetSted_objectid
+--2 DS_Soe 
+---2.1 Søg på objectid 
+---2.2 Hent geometri ETRS89 / UTM zone 32N (EPSG:25832)
+--3 GEODKV_Soe
+---3.1 Geometri i 3D https://geodanmark.nu/Spec6/HTML5/DK/StartHer.htm
 
 
 - Brug geojson-formatet i projektionen WGS 84 (EPSG:4326) og få kortvisning i github 
