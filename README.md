@@ -1,24 +1,35 @@
 # Arresø
-Min legeplads til at bringe min sø-modelleringsviden up-to-date
-![Arresø google map d. 27. sept. 2026](Arresoe_google_20260927.png)
 
-Googles bud på en bounding_box er ikke god nok 
-- Brug datafordeleren til at hente sø-geometri
-__1 DS_Stednavn 
-___1.1 Søg på skrivemaade 
-___1.2 gem navngivetSted_objectid
-__2 DS_Soe 
-___2.1 Søg på objectid 
-___2.2 Hent geometri ETRS89 / UTM zone 32N (EPSG:25832)
-__3 GEODKV_Soe
-___3.1 Geometri i 3D https://geodanmark.nu/Spec6/HTML5/DK/StartHer.htm
+Min legeplads til at bringe min sø-modelleringsviden up-to-date ![Arresø
+google map d. 27. sept. 2026](Arresoe_google_20260927.png)
 
+-   Googles bud på en bounding_box er ikke god nok
 
-- Brug geojson-formatet i projektionen WGS 84 (EPSG:4326) og få kortvisning i github 
--- Baggrundskort kan ikke fjernes
--- Farver kan ikke tilpasses
+-   Brug datafordeleren til at hente sø-geometri
 
-```
+-   Brug geojson-formatet i projektionen WGS 84 (EPSG:4326) og få
+    kortvisning i github
+
+    -   Baggrundskort kan ikke fjernes i preview
+
+    -   Farver kan ikke tilpasses i preview
+
+1.  DS_Stednavn
+
+-   [x] Søg på skrivemaade
+-   [x] Gem navngivetSted_objectid
+
+2.  DS_Soe
+
+-   [x] Søg på objectid
+-   [x] Hent geometri ETRS89 / UTM zone 32N (EPSG:25832)
+
+3.GEODKV_Soe
+
+-   [ ] Geometri i 3D
+    <https://geodanmark.nu/Spec6/HTML5/DK/StartHer.htm>
+
+```         
 #Pseudo
 
 #1. Gem geometri i fil
@@ -64,9 +75,9 @@ polygon_sf <- df_wgs84$geometry %>%
 st_write(polygon_sf, "github_delvisklar_geometri.geojson", driver = "GeoJSON", delete_dsn = TRUE)
 ```
 
-- Bestem kvadrater i DKN 
+-   Bestem kvadrater i DKN
 
 ![Arresø med DKN 1km](Arresoe_med_1km_kvadrater.png)
 
-Inspiration 
-https://sgavmst.dk/media/kxspz2ao/dokumentation-for-digitalt-skovkort.pdf
+Inspiration
+<https://sgavmst.dk/media/kxspz2ao/dokumentation-for-digitalt-skovkort.pdf>
