@@ -26,8 +26,9 @@ google map d. 27. sept. 2026](Arresoe_google_20260927.png)
 
 3.GEODKV_Soe
 
--   [ ] Geometri i 3D
-    <https://geodanmark.nu/Spec6/HTML5/DK/StartHer.htm>
+-   [x] Søg på et fladepunkt fra DS_Soe
+-   [x] Bestem objectid
+-   [x] Hent geometri 3D flade + dybde (EPSG:25832)
 
 ```         
 #Pseudo
